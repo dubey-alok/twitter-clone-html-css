@@ -1,0 +1,348 @@
+CSS RESET Josh W Comeau */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+    margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+    height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* ----------------------------------------------------- */
+/* 
+/* MAIN BODY CSS */
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /* font-family: Arial, sans-serif; */
+    font-size: 15px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    overflow: auto;
+
+}
+
+.main-container {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(68, 67, 67);
+}
+
+.main {
+    width: 600px;
+    height: 650px;
+    margin: 150px auto;
+    background-color: black;
+    border-radius: 15px;
+
+
+}
+
+
+.main-content {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    /* text-align: center; */
+}
+
+.icon {
+
+    text-align: start;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.icon span {
+    margin-top: 15px;
+    padding-top: 15px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 65px;
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 25px;
+
+
+}
+
+.a {
+    margin-top: 20px;
+    color: white;
+
+    font-size: 1rem;
+}
+
+.b {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.b span {
+    background-color: green;
+}
+
+.b-1 {
+    display: inline;
+}
+
+/* .b-1 input {
+    width: 100%;
+    padding-bottom: 10px;
+} */
+
+
+.b input {
+    padding: 8px;
+    border-radius: 4px;
+    color: rgba(128, 128, 128, 0.491);
+    border: 1px solid rgba(128, 128, 128, 0.491);
+    line-height: 45px;
+    font-size: 15px;
+    background-color: black;
+    font-weight: 600;
+
+
+}
+
+.b span {
+    color: white;
+}
+
+
+
+
+
+.b input:last-child {
+    margin-top: 25px;
+
+}
+
+.main-content p {
+    margin: 5px auto;
+    text-align: center;
+    color: white;
+}
+
+.middle {
+    text-align: end;
+    padding-top: 15px;
+}
+
+.middle a {
+    text-decoration: none;
+    color: #0B86DA;
+    font-weight: 500;
+
+}
+
+.c {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.c p:nth-child(1) {
+
+    margin-top: 15px;
+    margin-bottom: 0;
+    color: white;
+    font-weight: bold;
+    padding-bottom: 0;
+
+}
+
+.c p:nth-child(2) {
+
+    margin-top: 8px;
+    padding-top: 0;
+    font-weight: 500;
+    width: 100%;
+    font-size: .9rem;
+    margin-left: 0px;
+    padding-left: 0px;
+    line-height: 1.6em;
+    text-align: left;
+}
+
+
+
+.c p {
+
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 0;
+    color: gray;
+}
+
+.select {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+
+}
+
+#month-select {
+    width: 50%;
+    height: 6vh;
+    border: 1px solid rgba(128, 128, 128, 0.491);
+    border-radius: 5px;
+    background-color: black;
+    color: gray;
+}
+
+#day-select {
+    width: 22%;
+    margin: 0 10px;
+    border: 1px solid rgba(128, 128, 128, 0.491);
+    border-radius: 5px;
+    background-color: black;
+    color: gray;
+}
+
+#year-select {
+    width: 28%;
+    border: 1px solid rgba(128, 128, 128, 0.491);
+    border-radius: 5px;
+    background-color: black;
+    color: gray;
+}
+
+.c button {
+    margin-top: 90px;
+    background-color: gray;
+    height: 50px;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: 0;
+}
+
+
+/* .c:focus {
+
+    border-radius: 20px solid dodgerblue;
+} */
+
+@media only screen and (max-width: 1440px) {
+    .main {
+        width: 600px;
+
+
+
+
+    }
+
+
+    /* @media only screen and (max-width: 600px) {
+        .a {
+            margin-top: 17px;
+            color: dodgerblue;
+            font-size: 1rem;
+            background-color: green;
+            padding-right: 0;
+            margin-right: 0;
+
+        }
+    } */
+
+    /* body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        font-size: 15px;
+
+
+    }
+
+    .main-container {
+        min-height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(68, 67, 67);
+    } */
+}
+
+
+/* MAIN BODY CSS ENDS */
